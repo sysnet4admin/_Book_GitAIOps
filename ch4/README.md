@@ -12,6 +12,6 @@
 | 4.2 | <small>메트릭: Prometheus + Grafana</small> |
 | 4.3 | <small>로깅: Loki + Fluent Bit</small> |
 | 4.4 | <small>알림 설정</small> |
-| 💡 | <small>Hints & Tips: AI에게 검증시키기 — `/cluster-audit`</small> |
+| 💡 | <small>Hints & Tips: CLAUDE.md에 관측성 규칙 추가하기</small> |
 
 > 자세한 내용은 책을 참고하세요.

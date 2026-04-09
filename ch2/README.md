@@ -15,6 +15,6 @@ Claude Code와 대화하면서 GCP 인증, GKE 클러스터 생성, Notiflex 앱
 | 2.5 | <small>GKE 클러스터 생성</small> |
 | 2.6 | <small>Notiflex 앱 생성 · 빌드 · 배포</small> |
 | 2.7 | <small>GitHub에 첫 커밋</small> |
-| 💡 | <small>Hints & Tips: `/update-docs` 스킬 만들기</small> |
+| 💡 | <small>Hints & Tips: CLAUDE.md가 만드는 차이</small> |
 
 > 자세한 내용은 책을 참고하세요.
