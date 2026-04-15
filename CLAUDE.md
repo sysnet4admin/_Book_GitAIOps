@@ -117,7 +117,7 @@ mode: auto
 |---------------|------|-----------|
 | 지금까지 구성한 notiflex-platform 저장소를 분석해줘 | 실행 | `prompt-guardrails/ch9/9.1-repo-analysis.md` |
 | 지금까지 쌓인 것들 돌아봐줘 | 실행 | `prompt-guardrails/ch9/9.2-retrospective.md` |
-| 온보딩 문서 만들어줘 | 실행 | `prompt-guardrails/ch9/9.3-onboarding.md` |
+| 온보딩 문서 만들어줘 | 실행 | `prompt-guardrails/appendix-a/onboarding.md` |
 | Git, AI, Ops 연결 분석해줘 | 실행 | `prompt-guardrails/ch9/9.4-gitaiops.md` |
 | 다음 단계 제안해줘 | 실행 | `prompt-guardrails/ch9/9.5-wrap-up.md` |
 | 다시 시작할 준비해줘 / 환경 초기화해줘 | 실행 | `prompt-guardrails/ch9/restart-to-ready.md` |
