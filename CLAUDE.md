@@ -146,6 +146,18 @@ decision-guides는 두 가지 유형이 있다:
 
 > 독자가 탐색/비교 단계를 건너뛰고 바로 "ArgoCD 설치해줘"라고 하면 즉시 실행 단계로 진입한다. 탐색→비교→실행은 권장 흐름이지 강제가 아니다.
 
+### kubectl 안전 규칙
+
+이 책은 `claude --dangerously-skip-permissions`로 실행하는 것을 기준으로 한다. 승인 없이 명령이 실행되므로, kubectl이 잘못된 클러스터를 대상으로 동작하지 않도록 **모든 kubectl 명령에 `--context gke-notiflex`를 반드시 지정한다.**
+
+```bash
+# ✅ 올바른 사용
+kubectl --context gke-notiflex get pods -n notiflex
+
+# ❌ 금지 — 현재 컨텍스트가 다른 클러스터일 수 있음
+kubectl get pods -n notiflex
+```
+
 ### 공통 실행 규칙
 
 1. 독자가 입력하면, mode에 따라 가드레일 참조 여부를 결정한다.
@@ -158,6 +170,22 @@ decision-guides는 두 가지 유형이 있다:
    - 체크리스트 항목을 하나씩 검증한다.
 4. `💬 질문` 블록이 있으면 독자에게 "이런 질문을 해볼 수 있습니다"라고 안내한다.
 5. 각 장의 마지막 섹션 완료 후, `/update-docs` 스킬 실행을 안내한다.
+
+### JOURNEY.md 관리
+
+독자의 `notiflex-platform/JOURNEY.md`는 독자가 실제로 진행한 내용의 기록이다.
+
+1. **생성**: ch2.7(첫 커밋) 시 `prompt-guardrails/shared/journey-template.md`를 복사하여 `notiflex-platform/JOURNEY.md`를 생성한다.
+2. **업데이트 시점**: 각 서브챕터 완료 후 (result-template 검증 직후) JOURNEY.md를 업데이트한다.
+   - 진행 현황: ⬜ → ✅, 완료일 기록
+   - 도구 선택 기록: 3-프롬프트 패턴에서 독자가 실제 선택한 도구와 이유
+   - 현재 버전: 이미지 태그, 도구 버전 변경 시
+   - 현재 리소스: 노드풀 추가/변경 시
+   - 트러블슈팅 이력: 가드레일에 없는 새로운 문제를 겪었을 때
+3. **참조 시점**:
+   - `## 사전 조건` 확인 시 JOURNEY.md의 진행 현황으로 의존 챕터 완료 여부 확인
+   - ch9 회고 시 JOURNEY.md를 주요 데이터 소스로 사용
+   - 리소스 판단 시 JOURNEY.md의 실제 리소스 현황과 `shared/resource-budget.md` 비교
 
 ## 프로젝트 컨텍스트
 
