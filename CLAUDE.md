@@ -50,6 +50,10 @@ mode: auto
 | GitHub Actions CI 만들어줘 | 실행 | `prompt-guardrails/ch3/3.4-github-actions.md` |
 | CI에서 빌드하면 자동으로 배포까지 되게 할 수 있어? | 탐색 | `decision-guides/ch3/3.5-ci-cd-integration.md` |
 | CI랑 ArgoCD 연결해줘 | 실행 | `prompt-guardrails/ch3/3.5-ci-argocd.md` |
+| CLAUDE.md에 다음 행동 규칙을 추가해줘 | 실행 | `prompt-guardrails/ch3/claudemd-example.md` |
+| notiflex-api deployment 지워줘 | 실행 | `prompt-guardrails/ch3/claudemd-example.md` |
+| notiflex-api 상태 확인해줘 | 실행 | `prompt-guardrails/ch3/claudemd-example.md` |
+| 방금 추가한 규칙 되돌려줘 | 실행 | `prompt-guardrails/ch3/claudemd-example.md` |
 
 ### 4장: 관측 가능성 한번에 구축하기
 | 독자 입력 예시 | 유형 | 참조 파일 |
