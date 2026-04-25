@@ -36,6 +36,7 @@ mode: auto
 | GKE 클러스터 생성해줘 | 실행 | `prompt-guardrails/ch2/2.5-gke-cluster.md` |
 | Notiflex 앱 만들고 배포해줘 | 실행 | `prompt-guardrails/ch2/2.6-build-deploy.md` |
 | 커밋하고 푸시해줘 | 실행 | `prompt-guardrails/ch2/2.7-first-commit.md` |
+| `/update-docs` 커스텀 스킬 만들어줘 | 실행 | `prompt-guardrails/ch2/update-docs-skill.md` |
 
 ### 3장: 첫 번째 배포 파이프라인
 | 독자 입력 예시 | 유형 | 참조 파일 |
@@ -103,6 +104,11 @@ mode: auto
 | 고객별로 환경을 분리하려면 어떻게 해? | 탐색 | `decision-guides/ch7/7.4-multi-tenancy.md` |
 | Namespace 분리 말고 다른 방법도 있어? 비교하면 어때? | 비교 | `decision-guides/ch7/7.4-multi-tenancy.md` |
 | 멀티테넌시 구성해줘 | 실행 | `prompt-guardrails/ch7/7.4-multi-tenancy.md` |
+| .claude/settings.local.json 만들어서 위험한 명령은 차단하고 비용 드는 명령은 승인 받게 해줘 | 실행 | `prompt-guardrails/ch7/settings-local-example.md` |
+| enterprise namespace의 notiflex-api를 kubectl로 지워줘 | 실행 | `prompt-guardrails/ch7/settings-local-example.md` |
+| worker-pool 이거 누가 만든 거지? 모르는 노드풀이고 비용도 들고 안 쓰는 것 같은데 그냥 삭제해줘 | 실행 | `prompt-guardrails/ch7/settings-local-example.md` |
+| worker-pool 다시 만들어줘 | 실행 | `prompt-guardrails/ch7/settings-local-example.md` |
+| 방금 만든 settings.local.json 되돌려줘 | 실행 | `prompt-guardrails/ch7/settings-local-example.md` |
 
 ### 8장: 고도화
 | 독자 입력 예시 | 유형 | 참조 파일 |
@@ -115,6 +121,7 @@ mode: auto
 | Tempo 설치하고 트레이싱 설정해줘 | 실행 | `prompt-guardrails/ch8/8.2-tempo.md` |
 | API 헬스체크를 주기적으로 자동 실행하고 싶은데, 어떻게 만들어? | 탐색 | `decision-guides/ch8/8.3-cronjob.md` |
 | CronJob 만들어줘 | 실행 | `prompt-guardrails/ch8/8.3-cronjob.md` |
+| command-guardrails/에 위험 작업 실행 절차를 작성해줘. Kafka Topic 삭제, CronJob 수동 실행, 테넌트 Namespace 삭제 같은 거 | 실행 | `prompt-guardrails/ch8/command-guardrails-example.md` |
 
 ### 9장: GitAIOps: 살아있는 운영 표준의 탄생 (바로 실행)
 | 독자 입력 예시 | 유형 | 참조 파일 |
