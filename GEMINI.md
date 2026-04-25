@@ -80,7 +80,7 @@ unset GEMINI_API_KEY                         # API key 무력화
 
 ### Skill / Subagent 부재
 - Claude Code의 `/skill`, `Agent` subagent는 Gemini에 없음
-- `/update-docs`, `/cluster-audit` 등은 수동 진행 (해당 prompt-guardrails 직접 참조)
+- `/update-docs`는 수동 진행 (해당 prompt-guardrails 직접 참조)
 - 단 Gemini도 `gemini skills` (extension 형태) 지원 — 본 책은 미사용
 
 ## 4. 책 본문 진행

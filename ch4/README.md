@@ -12,6 +12,6 @@
 | 4.2 | <small>메트릭 모니터링: Prometheus + Grafana</small> |
 | 4.3 | <small>로그 수집: Loki + Fluent Bit</small> |
 | 4.4 | <small>알림 설정: PrometheusRule</small> |
-| 💡 | <small>Hints & Tips: AI에게 검증시키기: `/cluster-audit`</small> |
+| 💡 | <small>마무리: memory에 작업 컨텍스트 기록</small> |
 
 > 자세한 내용은 책을 참고하세요.

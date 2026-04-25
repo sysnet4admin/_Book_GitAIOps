@@ -21,7 +21,6 @@ Claude Code의 `/skill` 단축은 Codex에 없습니다. 동등한 작업을 직
 | Claude Skill | Codex 대체 |
 |---|---|
 | `/update-docs` | 수동 진행 — 대응하는 `prompt-guardrails/` 파일 참조 |
-| `/cluster-audit` | 수동 진행 — 대응하는 `prompt-guardrails/` 파일 참조 |
 
 ## 3. 알려진 제약 (Codex 한정)
 
