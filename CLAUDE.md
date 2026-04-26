@@ -91,6 +91,7 @@ mode: auto
 | Blue/Green 말고 더 안전한 배포 방법 없어? 새 버전에 트래픽을 조금씩 보내는 방법? | 탐색 | `decision-guides/ch6/6.3-canary-vs-bluegreen.md` |
 | Canary랑 Blue/Green 차이를 다시 정리해줘. 다른 방법도 있다고 했는데, 비교하면 어때? | 비교 | `decision-guides/ch6/6.3-canary-vs-bluegreen.md` |
 | Canary 배포로 변경해줘 | 실행 | `prompt-guardrails/ch6/6.3-canary.md` |
+| claude-context/에 아키텍처 스냅샷 정리해줘 | 실행 | `prompt-guardrails/ch6/6.4-architecture-context.md` |
 
 ### 7장: 규모 확장
 | 독자 입력 예시 | 유형 | 참조 파일 |
