@@ -13,6 +13,5 @@
 | 9.3 | <small>기대하지 않았던 효과</small> |
 | 9.4 | <small>GitAIOps의 출현</small> |
 | 9.5 | <small>마무리: 다음 단계</small> |
-| 💡 | <small>Hints & Tips: AI와 대화하는 습관</small> |
 
 > 자세한 내용은 책을 참고하세요.
