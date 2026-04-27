@@ -11,7 +11,11 @@
 
 ### 단계 1: settings.local.json 만들기
 
-`notiflex-platform/.claude/settings.local.json`을 다음 내용으로 생성한다.
+독자는 `_Book_GitAIOps/` 디렉터리에서 Claude Code를 실행하므로, `.claude/settings.local.json`을 이 디렉터리 기준으로 생성한다. Claude Code는 현재 작업 디렉터리의 `.claude/settings.local.json`을 자동으로 읽는다.
+
+> ⚠️ **`notiflex-platform/.claude/`에 만들지 않는다**: 독자의 cwd는 `_Book_GitAIOps/`이므로, `notiflex-platform/` 하위의 파일은 현재 세션에서 읽히지 않는다.
+
+`.claude/settings.local.json`을 다음 내용으로 생성한다:
 
 ```json
 {
@@ -64,13 +68,15 @@ rm .claude/settings.local.json
 
 `ls .claude/ 2>/dev/null`로 파일이 사라졌는지 확인. CLAUDE.md 자연어 규칙만 남고, 기술적 강제는 풀린다.
 
+> ⚠️ **삭제 전 백업**: 기존에 `.claude/settings.local.json`이 있었다면 체험용 파일로 덮어쓴 것이다. 되돌릴 때 단순 삭제가 아니라 원래 내용으로 복원해야 한다. 단계 1 전에 `test -f .claude/settings.local.json && cp .claude/settings.local.json .claude/settings.local.json.bak`으로 백업해뒀다면 `mv .claude/settings.local.json.bak .claude/settings.local.json`으로 복원한다.
+
 ### 단계 5: 누락 안전망 (체험 잔존 감지)
 
 단계 4 직후 또는 다음 장(8장) 실행 시작 시 자동 검증을 수행한다.
 
 ```bash
 # settings.local.json이 잔존하면 단계 4 누락
-test -f notiflex-platform/.claude/settings.local.json && echo "⚠️ settings.local.json 잔존 — 단계 4(되돌림) 누락" || echo "OK: 잔존 없음"
+test -f .claude/settings.local.json && echo "⚠️ settings.local.json 잔존 — 단계 4(되돌림) 누락" || echo "OK: 잔존 없음"
 
 # worker-pool이 사라졌으면 단계 3-복구 누락
 gcloud container node-pools list --cluster=notiflex-cluster --zone=asia-northeast3-a 2>/dev/null | grep -q worker-pool && echo "OK: worker-pool 정상" || echo "⚠️ worker-pool 누락 — 단계 3-복구 필요"
