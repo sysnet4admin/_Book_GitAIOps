@@ -27,6 +27,7 @@ description: 저장소 문서를 현재 작업 기준으로 갱신하고 변경 
 
 2. 저장소 문서를 파악한 내용에 맞춰 갱신한다. 후보 (존재하는 것만 처리):
    - `JOURNEY.md` — 진행 현황, 도구 선택, 현재 버전, 리소스 상태
+     **진행 현황**: 이번 장에서 완료한 서브챕터를 ⬜ → ✅로 변경하고 완료일(YYYY-MM-DD)을 기록한다. 비워두거나 건너뛰지 않는다.
      **현재 버전**: 이번 장에서 설치하거나 버전이 바뀐 컴포넌트는 추측하지 않고 클러스터에서 직접 조회해 채운다. 비워두지 않는다.
      - Notiflex 이미지: `kubectl --context gke-sysnet4admin_book_gitaiops get rollout notiflex-api -n notiflex -o jsonpath='{.spec.template.spec.containers[0].image}'`
      - ArgoCD: `kubectl --context gke-sysnet4admin_book_gitaiops get deploy argocd-server -n argocd -o jsonpath='{.spec.template.spec.containers[0].image}'`
