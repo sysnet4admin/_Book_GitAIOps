@@ -27,6 +27,12 @@ description: 저장소 문서를 현재 작업 기준으로 갱신하고 변경 
 
 2. 저장소 문서를 파악한 내용에 맞춰 갱신한다. 후보 (존재하는 것만 처리):
    - `JOURNEY.md` — 진행 현황, 도구 선택, 현재 버전, 리소스 상태
+     **현재 버전**: 이번 장에서 설치하거나 버전이 바뀐 컴포넌트는 추측하지 않고 클러스터에서 직접 조회해 채운다. 비워두지 않는다.
+     - Notiflex 이미지: `kubectl --context gke-sysnet4admin_book_gitaiops get rollout notiflex-api -n notiflex -o jsonpath='{.spec.template.spec.containers[0].image}'`
+     - ArgoCD: `kubectl --context gke-sysnet4admin_book_gitaiops get deploy argocd-server -n argocd -o jsonpath='{.spec.template.spec.containers[0].image}'`
+     - Kafka: `kubectl --context gke-sysnet4admin_book_gitaiops get kafka -n kafka -o jsonpath='{.items[0].spec.kafka.version}'`
+     - 그 외 도구: `kubectl --context gke-sysnet4admin_book_gitaiops get pod -n <namespace> -l <label> -o jsonpath='{.items[0].spec.containers[0].image}'`
+     **현재 리소스**: 노드풀이 추가·변경됐으면 `kubectl --context gke-sysnet4admin_book_gitaiops get nodes -L cloud.google.com/gke-nodepool`로 조회해 테이블을 갱신한다.
    - `CLAUDE.md` — 규칙이나 컨텍스트가 바뀐 경우
    - `docs/architecture-decisions.md` — 결정 사항 누적 (도입: 5장)
      **파일이 존재하는 경우에만**: `JOURNEY.md`의 도구 선택 기록 테이블에서 직전 장에 새로 추가된 결정을 찾아 ADR 항목으로 추가한다. 번호는 기존 마지막 ADR 번호 +1부터 시작한다. 파일이 없으면 건너뛴다 (신설은 ch5 가드레일이 담당).
