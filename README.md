@@ -1,4 +1,7 @@
 # AI 시대에 개발자가 알아야 하는 인프라 구성 배포 with 클로드 코드
+
+**🇰🇷 한국어** | [🇬🇧 English](README.en.md)
+
 <a href="">
 <img src="" width="400">
 </a>
