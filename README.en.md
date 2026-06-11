@@ -5,19 +5,21 @@
 [한국어](README.md) | **English**
 
 <a href="https://gilbut.co/c/26066621Uj">
-<img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791140719174.jpg" width="320">
+<img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791140719174.jpg" width="360">
 </a>
 
+<br/>
+<br/>
+
 ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![AI Agent](https://img.shields.io/badge/AI_Agent-5A45FF?style=flat-square)
 ![GitAIOps](https://img.shields.io/badge/GitAIOps-0F172A?style=flat-square&logo=git&logoColor=white)
-![GitOps](https://img.shields.io/badge/GitOps-EF7B4D?style=flat-square&logo=argo&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![GKE](https://img.shields.io/badge/GKE-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-![Observability](https://img.shields.io/badge/Observability-7B68EE?style=flat-square&logo=opentelemetry&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
 ![Cloud Native](https://img.shields.io/badge/Cloud_Native-231F20?style=flat-square&logo=cncf&logoColor=white)
 
 </div>
